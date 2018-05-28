@@ -1,0 +1,3 @@
+Plugin 'stephpy/vim-yaml'
+
+

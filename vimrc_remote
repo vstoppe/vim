@@ -1,0 +1,69 @@
+"""""""""" VIM-Anpassungen ohne Plugins """"""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""" diverses """""""
+""""""""""""""""""""""""
+
+""" Allgemeine Settings ein-sourcen
+source ~/.vim/common.vim
+
+""" Statusline Anpassungen wie Powerline
+source ~/.vim/statusline.vim
+
+"filetype plugin on 
+
+""" Dateispezifische Anpassungen
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
+
+"au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+au BufNewFile,BufRead *.sh
+    \ set tabstop=3 |
+    \ set softtabstop=3 |
+    \ set shiftwidth=3 |
+    \ match BadWhitespace /\s\+$/
+
+
+
+""" Enable code folding
+ set foldmethod=indent
+ set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+
+
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+
+set background=dark
+"colorscheme zenburn
+"colorscheme osx_like
+"colorscheme solarized
+"colorscheme 256-grayvim
+"colorscheme desertedocean
+
+
+" Wechsel fuer Farbschemata erleichtern:
+"call togglebg#map("<F5>")
