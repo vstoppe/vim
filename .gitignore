@@ -7,8 +7,11 @@ bundle/junos.vim
 bundle/nerdtree
 bundle/puppet-vim
 bundle/pydiction
+bundle/python-mode
 bundle/SimpylFold
 bundle/SimpylFold
 bundle/syntastic
+bundle/tlib_vim
 bundle/vim-*
 bundle/YouCompleteMe
+swap
