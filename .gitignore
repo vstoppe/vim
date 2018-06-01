@@ -1,1 +1,14 @@
-bundle
+bundle/bash-support.vim
+bundle/ctrlp.vim
+bundle/delimitmate
+bundle/indenthtml.vim
+bundle/indentline
+bundle/junos.vim
+bundle/nerdtree
+bundle/puppet-vim
+bundle/pydiction
+bundle/SimpylFold
+bundle/SimpylFold
+bundle/syntastic
+bundle/vim-*
+bundle/YouCompleteMe
