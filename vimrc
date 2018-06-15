@@ -9,18 +9,9 @@
 """ Allgemeine Settings ein-sourcen
 source ~/.vim/common.vim
 
-""" Statusline Anpassungen wie Powerline
-source ~/.vim/statusline.vim
-
 "filetype plugin on 
 
 """ Dateispezifische Anpassungen
-
-au BufNewFile,BufRead *.pp
-	\ set filetype=puppet |
-	\ set tabstop=4 |
-	\ set shiftwidth=4 |
-	\ set expandtab
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -114,8 +105,19 @@ source  ~/.vim/indentline.vim
 " Besseres Code Folding in Python
 source ~/.vim/simplyfold.vim
 
+
+""" Choose your Statusbar """
+"""""""""""""""""""""""""""""
+
 """ Powerline statusbar
-"source ~/.vim/powerline.vim
+source ~/.vim/powerline.vim
+
+""" Statusline Anpassungen wie Powerline
+"source ~/.vim/statusline.vim
+
+"""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""
+
 
 """ Auto-complete nachruesten
 source ~/.vim/youcompleteme.vim
@@ -189,3 +191,7 @@ colorscheme desertedocean
 
 " Wechsel fuer Farbschemata erleichtern:
 "call togglebg#map("<F5>")
+"
+"
+"
+

@@ -14,3 +14,5 @@ set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 
 set laststatus=2 " Zeige immer die Statusline an
+
+
