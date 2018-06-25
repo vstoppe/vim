@@ -113,7 +113,7 @@ source ~/.vim/simplyfold.vim
 source ~/.vim/powerline.vim
 
 """ Statusline Anpassungen wie Powerline
-"source ~/.vim/statusline.vim
+" s ource ~/.vim/statusline.vim
 
 """""""""""""""""""""""""""""
 """""""""""""""""""""""""""""
