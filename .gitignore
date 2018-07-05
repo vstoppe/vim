@@ -5,6 +5,7 @@ bundle/indenthtml.vim
 bundle/indentline
 bundle/junos.vim
 bundle/nerdtree
+bundle/powerline
 bundle/puppet-vim
 bundle/pydiction
 bundle/python-mode
