@@ -159,7 +159,6 @@ filetype plugin indent on    " required
 
 
 
-
 set background=dark
 "colorscheme zenburn
 "colorscheme osx_like
