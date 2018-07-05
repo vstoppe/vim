@@ -10,28 +10,6 @@ source ~/.vim/common.vim
 
 "filetype plugin on 
 
-""" Dateispezifische Anpassungen
-
-au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix \
-	\ set filetype=python
-
-au BufNewFile,BufRead *.js
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
-
-au BufNewFile,BufRead *.sh
-    \ set tabstop=3 |
-    \ set softtabstop=3 |
-    \ set shiftwidth=3 |
-    \ match BadWhitespace /\s\+$/
 
 
 
@@ -51,6 +29,34 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+
+""" Dateispezifische Anpassungen
+""""""""""""""""""""""""""""""""""""""""
+
+" Anpassungen für Python-Dateien
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+    \ set filetype=python |
+
+
+
+au BufNewFile,BufRead *.js
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+au BufNewFile,BufRead *.sh
+    \ set tabstop=3 |
+    \ set softtabstop=3 |
+    \ set shiftwidth=3 |
+    \ match BadWhitespace /\s\+$/
 
 
 """"""" Konfiguration der Plugins """""""
@@ -72,63 +78,63 @@ source ~/.vim/ctrlp.vim
 " vim-colorschema enthaelt osx_like Farbschema
 Plugin 'flazz/vim-colorschemes'
 
+
 """ BASH support
 source ~/.vim/bash.vim 
+
 
 """ Indentline stellt für jede Einrückungsebene eine
 """ dünne vertikale Line dar.
 source  ~/.vim/indentline.vim
 
-"""""" SimplyFold Plugin """""""
-" Besseres Code Folding in Python
-source ~/.vim/simplyfold.vim
 
-
-""" Choose your Statusbar """
+""" Auswahl der Statusbar """
 """""""""""""""""""""""""""""
+
+" * Powerline kann unter Umständen VIM verlangsamen
+" * Stellt aber mehr informationen dar.
+" * Statusline ist schlanker, aber nicht so übersichtlich.
 
 """ Powerline statusbar
 source ~/.vim/powerline.vim
 
 """ Statusline Anpassungen wie Powerline
-" s ource ~/.vim/statusline.vim
+" source ~/.vim/statusline.vim
 
 """""""""""""""""""""""""""""
 """""""""""""""""""""""""""""
 
 
-""" Auto-complete nachruesten
-source ~/.vim/youcompleteme.vim
-
-""" fugitive, git plugin
+""" fugitive: Mächtiges Git-Plugin
 source ~/.vim/fugitive.vim
 
 
-""" Syntax Checking / Highlighting:
+""" Syntax Checking / Highlighting
+" mit syntastic 
 source ~/.vim/syntax.vim 
 
-""" Datei-Browser
+
+""" Datei-Manager
 source ~/.vim/nerdtree.vim
 
 """ Split screen Konfiguration ein-sourcen:
 source ~/.vim/splitscreen.vim
 
-""" xmledit
-"Plugin 'sukima/xmledit'
 
 """ Weiches scrollen
 source ~/.vim/smooth_scroll.vim
 
-""" YAML support
 
+""" YAML support
 source ~/.vim/yaml.vim
+
 
 """ Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/snipmate.vim
 
 
 """ Python mode
-source ~/.vim/python-mode.vim
+"source ~/.vim/python.vim
 
 
 """ Buffer line
@@ -140,22 +146,16 @@ source ~/.vim/bufferline.vim
 source ~/.vim/puppet.vim
 
 
-""""""""""""""""""""""""""""""""""""""""""""""
+""" Auto-complete nachruesten
+" Kollidiert mit Snipmate, das fuer Pupet sehr hilfreich ist
+"source ~/.vim/youcompleteme.vim
 
-"py << EOF
-"import os
-"import sys
-"if 'VIRTUAL_ENV' in os.environ:
-"  project_base_dir = os.environ['VIRTUAL_ENV']
-"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"  execfile(activate_this, dict(__file__=activate_this))
-"EOF
+""""""""""""""""""""""""""""""""""""""""""""""
 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
 
 
 
@@ -165,11 +165,3 @@ set background=dark
 "colorscheme solarized
 "colorscheme 256-grayvim
 colorscheme desertedocean
-
-
-" Wechsel fuer Farbschemata erleichtern:
-"call togglebg#map("<F5>")
-"
-"
-"
-

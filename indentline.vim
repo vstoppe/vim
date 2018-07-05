@@ -15,5 +15,6 @@ let g:indentLine_concealcursor = 'inc'
 " let g:indentLine_conceallevel = 2 
 
 
-"For code indented with tabs I think there is no need to support it, because you can use 
+" For code indented with tabs I think there is 
+" no need to support it, because you can use 
 set list lcs=tab:\|\ 
