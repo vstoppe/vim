@@ -7,8 +7,6 @@ Readme.md
 
 
 
-
-
 # My personal vim configuration
 
 Don't forget to link:
@@ -27,6 +25,10 @@ Hier müssen ggf. noch ein paar Pakete nachinstalliert werden:
 `aptitute install psutils socat`
 
 `pip install powerline-status`
+
+## Plugins in Vim installieren
+
+`:PluginInstall`
 
 
 ## YouCompleMe 
