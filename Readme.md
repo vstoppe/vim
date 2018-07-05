@@ -20,6 +20,15 @@ If you like to use this configuration for neovim link like this.
 `ln -s ~/.vim/vimrc ~/.config/nvim/init.vim`
 
 
+## Powerline status bar
+
+Hier müssen ggf. noch ein paar Pakete nachinstalliert werden:
+
+`aptitute install psutils socat`
+
+`pip install powerline-status`
+
+
 ## YouCompleMe 
 
 Components of YouCompleteMe have to be compoiled on the target system:
