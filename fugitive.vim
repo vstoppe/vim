@@ -5,4 +5,4 @@ Plugin 'tpope/vim-fugitive'
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
 """ Dokumentation
-" https://vimawesome.com/plugin/fugitive-vim
+" https://github.com/tpope/vim-fugitive/blob/master/doc/fugitive.txt
