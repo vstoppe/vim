@@ -1,4 +1,5 @@
-""""""" Auto indention von Python verbessern """"""" 
+""""""" Stellt dünne vertikale Linien für jede
+""""""" Einrückungsebene dar.
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
 Plugin 'yggdroot/indentline' 
