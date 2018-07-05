@@ -2,7 +2,7 @@
 
 imap <C-c> <CR><Esc>kA<CR> " Control+c fuehrt ein newline im insertmode ein
 " Control+f gedacht im im insertmode hinter ein Anführungszeichen zu springen
-imap <C-f> <Esc>la 
+imap <C-f> <Esc>la
 
 set encoding=utf-8 " UTF8 Support
 set relativenumber " auch ueber ":set rnu" erreichbar
@@ -47,3 +47,9 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h
     \ match BadWhitespace /\s\+$/
 
 
+""" Enable code folding
+ set foldmethod=indent
+ set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za

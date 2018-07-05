@@ -2,7 +2,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 
-
 """"""" diverses """""""
 """"""""""""""""""""""""
 
@@ -23,8 +22,6 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix \
 	\ set filetype=python
 
-
-"au BufNewFile,BufRead *.js, *.html, *.css
 au BufNewFile,BufRead *.js
     \ set tabstop=2 |
     \ set softtabstop=2 |
@@ -35,14 +32,6 @@ au BufNewFile,BufRead *.sh
     \ set softtabstop=3 |
     \ set shiftwidth=3 |
     \ match BadWhitespace /\s\+$/
-
-
-""" Enable code folding
- set foldmethod=indent
- set foldlevel=99
-
-" Enable folding with the spacebar
-nnoremap <space> za
 
 
 
@@ -67,12 +56,6 @@ Plugin 'gmarik/Vundle.vim'
 """"""" Konfiguration der Plugins """""""
 """""""""""""""""""""""""""""""""""""""""
 
-""" Ansible Plugin
-"source ~/.vim/ansible.vim
-
-""" Delimitmate
-"source ~/.vim/delimitmate.vim
-
 """ autoclose
 " scheint sich mit YCM zu beissen
 source ~/.vim/autoclose.vim
@@ -80,7 +63,7 @@ source ~/.vim/autoclose.vim
 
 """"""" Super Searching """""""
 " Durchsucht alles:
-Plugin 'kien/ctrlp.vim'
+source ~/.vim/ctrlp.vim
 
 
 """"""" Farbschemata """""""
@@ -89,16 +72,11 @@ Plugin 'kien/ctrlp.vim'
 " vim-colorschema enthaelt osx_like Farbschema
 Plugin 'flazz/vim-colorschemes'
 
-""" Plugin im um ein Wort einzufügen
-" cs"'   Change surrounding from " to '
-" ds"    Delete surrounding "
-"Plugin 'tpope/vim-surround'
-
-
 """ BASH support
 source ~/.vim/bash.vim 
 
-""" Auto indention von Python verbessern 
+""" Indentline stellt für jede Einrückungsebene eine
+""" dünne vertikale Line dar.
 source  ~/.vim/indentline.vim
 
 """""" SimplyFold Plugin """""""
