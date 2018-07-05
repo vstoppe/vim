@@ -1,6 +1,14 @@
 Readme.md
 
 
+# Checkout (als Puppet_IDE)
+
+`git clone http://gitlab.lindenbox.de/vst/vim.git --branch puppet_ide --single-branch ~/.vim`
+
+
+
+
+
 # My personal vim configuration
 
 Don't forget to link:
