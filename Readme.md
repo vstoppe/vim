@@ -33,6 +33,8 @@ Hier müssen ggf. noch ein paar Pakete nachinstalliert werden:
 
 ## YouCompleMe 
 
+YouCompleMe ist für Puppet-IDE nicht notwendig und kollidiert mit SnipMate.
+
 Components of YouCompleteMe have to be compoiled on the target system:
 
 `cd ~/.vim/bundle/YouCompleteMe`
