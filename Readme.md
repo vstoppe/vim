@@ -28,6 +28,12 @@ Hier müssen ggf. noch ein paar Pakete nachinstalliert werden:
 
 ## Plugins in Vim installieren
 
+Zunächst muss noch der Paketmanager für die Vim-Plugins installiert werden. Der ließ sich bisher nicht installationsfertig ins Repo integrieren:
+
+`git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+In Vim werden jetzt die Plugins installiert.
+
 `:PluginInstall`
 
 
