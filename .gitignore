@@ -14,5 +14,6 @@ bundle/SimpylFold
 bundle/syntastic
 bundle/tlib_vim
 bundle/vim-*
+bundle/Vundle.vim
 bundle/YouCompleteMe
 swap
