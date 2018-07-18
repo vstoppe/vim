@@ -150,6 +150,8 @@ source ~/.vim/puppet.vim
 " Kollidiert mit Snipmate, das fuer Pupet sehr hilfreich ist
 "source ~/.vim/youcompleteme.vim
 
+source ~/.vim/vagrant.vim
+
 """"""""""""""""""""""""""""""""""""""""""""""
 
 
