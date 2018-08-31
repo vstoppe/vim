@@ -17,6 +17,6 @@ Plugin 'rodjek/vim-puppet'
 au BufNewFile,BufRead *.pp
 	\ set ft=puppet |
 	\ let g:puppet_align_hashes = 1 |
-	\ set tabstop=4 |
-	\ set shiftwidth=4 |
+	\ set tabstop=2 |
+	\ set shiftwidth=2 |
 	\ set expandtab
