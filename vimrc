@@ -79,6 +79,14 @@ source ~/.vim/ctrlp.vim
 Plugin 'flazz/vim-colorschemes'
 
 
+""""""" vim dev-icons """"
+" fancy symbols for all situations
+" the dev-icons are not nescessary if the full
+" mononoki font set is installed
+
+source ~/.vim/dev-icons.vim
+
+
 """ BASH support
 source ~/.vim/bash.vim 
 
@@ -154,11 +162,13 @@ source ~/.vim/vagrant.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
+" File for loading automatically stuff at startup
+source ~/.vim/autoload.vim
 
 
 set background=dark
