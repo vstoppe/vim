@@ -102,12 +102,14 @@ source  ~/.vim/indentline.vim
 " * Powerline kann unter Umständen VIM verlangsamen
 " * Stellt aber mehr informationen dar.
 " * Statusline ist schlanker, aber nicht so übersichtlich.
+" * Airline replaces now Powerline, because it is compatible with Neovim
 
-""" Powerline statusbar
-source ~/.vim/powerline.vim
-
-""" Statusline Anpassungen wie Powerline
+" source ~/.vim/powerline.vim
 " source ~/.vim/statusline.vim
+
+source ~/.vim/airline.vim
+
+
 
 """""""""""""""""""""""""""""
 """""""""""""""""""""""""""""
