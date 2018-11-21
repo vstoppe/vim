@@ -12,9 +12,38 @@ source ~/.vim/common.vim
 
 
 
+""" vim-plug configuration
+""""""""""""""""""""""""""
+
+call plug#begin('~/.vim/plugged')
+
+""" autoclose (seems to collide with YouCompleMe)
+source ~/.vim/autoclose.vim
+
+source ~/.vim/ctrlp.vim
+source ~/.vim/nerdtree.vim
+source ~/.vim/fugitive.vim
+
+""""""" vim dev-icons """"
+" fancy symbols for all situations
+" the dev-icons are not nescessary if the full
+" mononoki font set is installed
+
+source ~/.vim/dev-icons.vim
+
+Plug 'KabbAmine/zeavim.vim'
+
+" Asynchronous Lint Engine
+Plug 'w0rp/ale'
+
+" Initialize plugin system
+call plug#end()
+
+
 
 """"""" Konfiguration des Plugin-Managers """""""
 """""""""""""""""""""""""""""""""""""""""""""""""
+
 
 set nocompatible              " required for plugins
 filetype off
@@ -62,14 +91,8 @@ au BufNewFile,BufRead *.sh
 """"""" Konfiguration der Plugins """""""
 """""""""""""""""""""""""""""""""""""""""
 
-""" autoclose
-" scheint sich mit YCM zu beissen
-source ~/.vim/autoclose.vim
 
 
-""""""" Super Searching """""""
-" Durchsucht alles:
-source ~/.vim/ctrlp.vim
 
 
 """"""" Farbschemata """""""
@@ -79,12 +102,6 @@ source ~/.vim/ctrlp.vim
 Plugin 'flazz/vim-colorschemes'
 
 
-""""""" vim dev-icons """"
-" fancy symbols for all situations
-" the dev-icons are not nescessary if the full
-" mononoki font set is installed
-
-source ~/.vim/dev-icons.vim
 
 
 """ BASH support
@@ -115,8 +132,6 @@ source ~/.vim/airline.vim
 """""""""""""""""""""""""""""
 
 
-""" fugitive: Mächtiges Git-Plugin
-source ~/.vim/fugitive.vim
 
 
 """ Syntax Checking / Highlighting
@@ -124,8 +139,6 @@ source ~/.vim/fugitive.vim
 source ~/.vim/syntax.vim 
 
 
-""" Datei-Manager
-source ~/.vim/nerdtree.vim
 
 """ Split screen Konfiguration ein-sourcen:
 source ~/.vim/splitscreen.vim

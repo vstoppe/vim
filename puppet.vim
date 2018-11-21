@@ -1,7 +1,7 @@
 Plugin 'rodjek/vim-puppet'
 
 " To enable Just puppet-lint and disable the parser uncomment next line
-"let g:syntastic_puppet_checkers=['puppetlint']
+" let g:syntastic_puppet_checkers=['puppetlint']
 
 " Formatting based on the latest Puppetlabs Style Guide
 " Syntax highlighting compatible with puppet 4.x
@@ -17,6 +17,7 @@ Plugin 'rodjek/vim-puppet'
 au BufNewFile,BufRead *.pp
 	\ set ft=puppet |
 	\ let g:puppet_align_hashes = 1 |
+	\ let g:syntastic_puppet_checkers=['puppetlint'] |
 	\ set tabstop=2 |
 	\ set shiftwidth=2 |
 	\ set expandtab
