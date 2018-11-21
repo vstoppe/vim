@@ -148,10 +148,6 @@ source ~/.vim/splitscreen.vim
 source ~/.vim/smooth_scroll.vim
 
 
-""" YAML support
-source ~/.vim/yaml.vim
-
-
 """ Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/snipmate.vim
 
