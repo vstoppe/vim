@@ -23,6 +23,7 @@ source ~/.vim/autoclose.vim
 source ~/.vim/ctrlp.vim
 source ~/.vim/nerdtree.vim
 source ~/.vim/fugitive.vim
+source ~/.vim/puppet.vim
 
 """"""" vim dev-icons """"
 " fancy symbols for all situations
@@ -35,6 +36,20 @@ Plug 'KabbAmine/zeavim.vim'
 
 " Asynchronous Lint Engine
 Plug 'w0rp/ale'
+
+" Buffer line: Super simple vim plugin to show the list of buffers in the command bar.
+source ~/.vim/bufferline.vim
+
+""" Indentline stellt für jede Einrückungsebene eine
+""" dünne vertikale Line dar.
+source  ~/.vim/indentline.vim
+
+""" Weiches scrollen
+source ~/.vim/smooth_scroll.vim
+
+""" Snipmate stellt skeletons fuer conditionals bereit
+source ~/.vim/snipmate.vim
+
 
 " Initialize plugin system
 call plug#end()
@@ -108,9 +123,6 @@ Plugin 'flazz/vim-colorschemes'
 source ~/.vim/bash.vim 
 
 
-""" Indentline stellt für jede Einrückungsebene eine
-""" dünne vertikale Line dar.
-source  ~/.vim/indentline.vim
 
 
 """ Auswahl der Statusbar """
@@ -144,25 +156,11 @@ source ~/.vim/syntax.vim
 source ~/.vim/splitscreen.vim
 
 
-""" Weiches scrollen
-source ~/.vim/smooth_scroll.vim
-
-
-""" Snipmate stellt skeletons fuer conditionals bereit
-source ~/.vim/snipmate.vim
-
 
 """ Python mode
 "source ~/.vim/python.vim
 
 
-""" Buffer line
-
-source ~/.vim/bufferline.vim
-
-
-""" puppet plugin
-source ~/.vim/puppet.vim
 
 
 """ Auto-complete nachruesten

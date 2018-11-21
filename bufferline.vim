@@ -1,7 +1,7 @@
 " Zeit die Buffer in der Statuszeile an
 " https://vimawesome.com/plugin/vim-bufferline
 
-Plugin 'bling/vim-bufferline'
+Plug 'bling/vim-bufferline'
 
 let g:bufferline_echo = 1
 let g:bufferline_active_buffer_left = '['

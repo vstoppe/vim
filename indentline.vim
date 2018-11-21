@@ -2,7 +2,6 @@
 """"""" Einrückungsebene dar.
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
-Plugin 'yggdroot/indentline' 
 
 """ Dickere dunkelgraue Fuehrungslinien: 
 let g:indentLine_setColors = 1
@@ -18,3 +17,5 @@ let g:indentLine_concealcursor = 'inc'
 " For code indented with tabs I think there is 
 " no need to support it, because you can use 
 set list lcs=tab:\|\ 
+
+Plug 'yggdroot/indentline' 
