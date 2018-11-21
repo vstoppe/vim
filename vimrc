@@ -21,8 +21,10 @@ call plug#begin('~/.vim/plugged')
 source ~/.vim/autoclose.vim
 
 source ~/.vim/ctrlp.vim
-source ~/.vim/nerdtree.vim
+source ~/.vim/deoplete.vim
 source ~/.vim/fugitive.vim
+source ~/.vim/nerdtree.vim
+source ~/.vim/neotags.vim
 source ~/.vim/puppet.vim
 
 """"""" vim dev-icons """"
