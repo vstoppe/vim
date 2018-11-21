@@ -53,6 +53,15 @@ source ~/.vim/smooth_scroll.vim
 source ~/.vim/snipmate.vim
 
 
+""""""" Farbschemata """""""
+"Plugin 'jnurmine/Zenburn'
+"Plugin 'altercation/vim-colors-solarized'
+" vim-colorschema enthaelt osx_like Farbschema
+Plug 'flazz/vim-colorschemes'
+
+"source ~/.vim/oceanic-next.theme
+
+
 " Initialize plugin system
 call plug#end()
 
@@ -112,11 +121,6 @@ au BufNewFile,BufRead *.sh
 
 
 
-""""""" Farbschemata """""""
-"Plugin 'jnurmine/Zenburn'
-"Plugin 'altercation/vim-colors-solarized'
-" vim-colorschema enthaelt osx_like Farbschema
-Plugin 'flazz/vim-colorschemes'
 
 
 
@@ -185,6 +189,6 @@ source ~/.vim/autoload.vim
 set background=dark
 "colorscheme zenburn
 "colorscheme osx_like
-"colorscheme solarized
+colorscheme solarized8_dark_high
 "colorscheme 256-grayvim
-colorscheme desertedocean
+"colorscheme desertedocean
