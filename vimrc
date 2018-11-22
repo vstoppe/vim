@@ -59,7 +59,7 @@ source ~/.vim/snipmate.vim
 " vim-colorschema enthaelt osx_like Farbschema
 Plug 'flazz/vim-colorschemes'
 
-"source ~/.vim/oceanic-next.theme
+source ~/.vim/oceanic-next.theme
 
 
 " Initialize plugin system
@@ -189,6 +189,7 @@ source ~/.vim/autoload.vim
 set background=dark
 "colorscheme zenburn
 "colorscheme osx_like
-colorscheme solarized8_dark_high
 "colorscheme 256-grayvim
 "colorscheme desertedocean
+"colorscheme solarized8_dark_high
+colorscheme OceanicNext
