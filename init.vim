@@ -1,1 +1,1 @@
-/Users/vst/.vimrc
+/Users/vst/.vim/vimrc

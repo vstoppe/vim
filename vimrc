@@ -2,18 +2,24 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 source ~/.vim/common.vim " common setting which do not affect plugins 
-source ~/.vim/design.vim " settings for appearance
 source ~/.vim/filetype_settings.vim
 source ~/.vim/splitscreen.vim " source split screen key bindings
 
 " Statusline can be a powerline/airline replacement in vim environments without
 " vim plugins
 " source ~/.vim/statusline.vim
+let g:python3_host_prog='/opt/local/bin/python3'
+let g:python_host_prog='/opt/local/bin/python3'
 
 """ vim-plug configuration
 """"""""""""""""""""""""""
 
 call plug#begin('~/.vim/plugged')
+
+function! DoRemote(arg)
+    UpdateRemotePlugins
+endfunction
+
 
 """ Auswahl der Statusbar """
 """""""""""""""""""""""""""""
@@ -55,13 +61,8 @@ Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 
+source ~/.vim/design.vim " settings for appearance
 
 " Some old plugins which are right not not in use...
 "source ~/.vim/youcompleteme.vim " Kollidiert mit Snipmate, das fuer Pupet sehr hilfreich ist
 "source ~/.vim/syntax.vim " completly replaced by ale?
-
-
-""""""""""""""""""""""""""""""""""""""""""""""
-
-"filetype plugin indent on    " required
-

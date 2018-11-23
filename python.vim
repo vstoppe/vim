@@ -23,7 +23,7 @@ Plug 'nvie/vim-flake8'
 " Code Folding for Python. Durch das Einrueckungssystem von Python ist
 " das Codefolding mit Boardmitteln oft nicht funktional.
 
-Plugin 'tmhedberg/SimpylFold'
+Plug 'tmhedberg/SimpylFold'
 
 " DocStrings fuer gefalteten Code anzeigen:
 let g:SimpylFold_docstring_preview=1
