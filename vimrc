@@ -12,9 +12,67 @@ source ~/.vim/common.vim
 
 
 
+""" vim-plug configuration
+""""""""""""""""""""""""""
+
+call plug#begin('~/.vim/plugged')
+
+""" autoclose (seems to collide with YouCompleMe)
+source ~/.vim/autoclose.vim
+
+source ~/.vim/ctrlp.vim
+source ~/.vim/deoplete.vim
+source ~/.vim/fugitive.vim
+source ~/.vim/nerdtree.vim
+source ~/.vim/neotags.vim
+source ~/.vim/puppet.vim
+
+""""""" vim dev-icons """"
+" fancy symbols for all situations
+" the dev-icons are not nescessary if the full
+" mononoki font set is installed
+
+source ~/.vim/dev-icons.vim
+
+Plug 'KabbAmine/zeavim.vim'
+
+" Asynchronous Lint Engine
+Plug 'w0rp/ale'
+
+" Buffer line: Super simple vim plugin to show the list of buffers in the command bar.
+source ~/.vim/bufferline.vim
+
+""" Indentline stellt für jede Einrückungsebene eine
+""" dünne vertikale Line dar.
+source  ~/.vim/indentline.vim
+
+""" Weiches scrollen
+source ~/.vim/smooth_scroll.vim
+
+""" Snipmate stellt skeletons fuer conditionals bereit
+source ~/.vim/snipmate.vim
+
+
+""""""" Farbschemata """""""
+"Plugin 'jnurmine/Zenburn'
+"Plugin 'altercation/vim-colors-solarized'
+" vim-colorschema enthaelt osx_like Farbschema
+Plug 'flazz/vim-colorschemes'
+
+source ~/.vim/oceanic-next.theme
+
+Plug 'tpope/vim-surround'
+
+
+
+" Initialize plugin system
+call plug#end()
+
+
 
 """"""" Konfiguration des Plugin-Managers """""""
 """""""""""""""""""""""""""""""""""""""""""""""""
+
 
 set nocompatible              " required for plugins
 filetype off
@@ -62,30 +120,18 @@ au BufNewFile,BufRead *.sh
 """"""" Konfiguration der Plugins """""""
 """""""""""""""""""""""""""""""""""""""""
 
-""" autoclose
-" scheint sich mit YCM zu beissen
-source ~/.vim/autoclose.vim
 
 
-""""""" Super Searching """""""
-" Durchsucht alles:
-source ~/.vim/ctrlp.vim
 
 
-""""""" Farbschemata """""""
-"Plugin 'jnurmine/Zenburn'
-"Plugin 'altercation/vim-colors-solarized'
-" vim-colorschema enthaelt osx_like Farbschema
-Plugin 'flazz/vim-colorschemes'
+
+
 
 
 """ BASH support
 source ~/.vim/bash.vim 
 
 
-""" Indentline stellt für jede Einrückungsebene eine
-""" dünne vertikale Line dar.
-source  ~/.vim/indentline.vim
 
 
 """ Auswahl der Statusbar """
@@ -94,19 +140,19 @@ source  ~/.vim/indentline.vim
 " * Powerline kann unter Umständen VIM verlangsamen
 " * Stellt aber mehr informationen dar.
 " * Statusline ist schlanker, aber nicht so übersichtlich.
+" * Airline replaces now Powerline, because it is compatible with Neovim
 
-""" Powerline statusbar
-source ~/.vim/powerline.vim
-
-""" Statusline Anpassungen wie Powerline
+" source ~/.vim/powerline.vim
 " source ~/.vim/statusline.vim
 
+source ~/.vim/airline.vim
+
+
+
 """""""""""""""""""""""""""""
 """""""""""""""""""""""""""""
 
 
-""" fugitive: Mächtiges Git-Plugin
-source ~/.vim/fugitive.vim
 
 
 """ Syntax Checking / Highlighting
@@ -114,36 +160,16 @@ source ~/.vim/fugitive.vim
 source ~/.vim/syntax.vim 
 
 
-""" Datei-Manager
-source ~/.vim/nerdtree.vim
 
 """ Split screen Konfiguration ein-sourcen:
 source ~/.vim/splitscreen.vim
 
-
-""" Weiches scrollen
-source ~/.vim/smooth_scroll.vim
-
-
-""" YAML support
-source ~/.vim/yaml.vim
-
-
-""" Snipmate stellt skeletons fuer conditionals bereit
-source ~/.vim/snipmate.vim
 
 
 """ Python mode
 "source ~/.vim/python.vim
 
 
-""" Buffer line
-
-source ~/.vim/bufferline.vim
-
-
-""" puppet plugin
-source ~/.vim/puppet.vim
 
 
 """ Auto-complete nachruesten
@@ -154,16 +180,19 @@ source ~/.vim/vagrant.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 
+" File for loading automatically stuff at startup
+source ~/.vim/autoload.vim
+
 
 set background=dark
 "colorscheme zenburn
 "colorscheme osx_like
-"colorscheme solarized
 "colorscheme 256-grayvim
-colorscheme desertedocean
+"colorscheme desertedocean
+"colorscheme solarized8_dark_high
+colorscheme OceanicNext

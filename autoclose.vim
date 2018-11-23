@@ -4,7 +4,7 @@
 " Dieses Plugin sorgt dafür, daß öffnende Klammern und Anführungszeichen
 " automatisch geschlossen werden. Das spart eine Menge Arbeit!
 "
-Plugin 'townk/vim-autoclose'
+Plug 'townk/vim-autoclose'
 
 let g:AutoClosePairs = "'' () {} [] ""  "
 

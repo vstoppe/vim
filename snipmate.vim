@@ -1,5 +1,5 @@
 " https://vimawesome.com/plugin/vim-snipmate-mine
-Plugin 'garbas/vim-snipmate'
-Plugin 'marcweber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
+Plug 'garbas/vim-snipmate'
+Plug 'marcweber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'

@@ -16,4 +16,6 @@ bundle/tlib_vim
 bundle/vim-*
 bundle/Vundle.vim
 bundle/YouCompleteMe
+plugged
 swap
+*.swp

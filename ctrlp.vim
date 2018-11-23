@@ -1,4 +1,4 @@
-Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " https://vimawesome.com/plugin/ctrlp-vim-everything-has-changed
 
