@@ -14,4 +14,3 @@ nnoremap <C-H> <C-W><C-H>
 " * Ctrl-k move to the split above
 " * Ctrl-l move to the split to the right
 " * Ctrl-h move to the split to the left
-"

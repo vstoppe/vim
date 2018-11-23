@@ -1,3 +1,5 @@
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Airline is a Powerline replacemanet. The advantage is that it also runs with
 " NeoVim
 " Airline themes can be inspected here:
@@ -12,6 +14,3 @@ let g:airline_theme='understated'
 
 " Setting the solarized theme to dark
 "let g:airline_solarized_bug='dark'
-
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'

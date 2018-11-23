@@ -30,12 +30,8 @@ set tabstop=4     " Weite eines Tab-Zeichens
 set noexpandtab " Ersetzt tab durch whitespaces
 set softtabstop=4 " Anzahl der Whitespaces fuer -expandtab-
 set shiftwidth=4  " Anzahl der Whitespaces im Normal-Mode
-
-
-
 set nopaste " set paste kann Key-Mappings kaputt machen und
 " Plugins ruinieren!! daher sollte es automatisch deaktiviert bleiben
-
 
 
 """ Unoetige Whatespaces markieren

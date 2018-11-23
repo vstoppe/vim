@@ -1,4 +1,4 @@
-Plugin 'markcornick/vim-vagrant'
+Plug 'hashivim/vim-vagrant'
 
 au BufRead,BufNewFile Vagrantfile
 	\ set filetype=ruby |

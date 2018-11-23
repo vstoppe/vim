@@ -7,7 +7,7 @@
 " to provide features like python code looking 
 " for bugs, refactoring and some other usefull things.
 
-Plugin 'klen/python-mode'
+Plug 'klen/python-mode'
 
 
 """""""""""""""""""""""""""""""""""""
@@ -15,7 +15,7 @@ Plugin 'klen/python-mode'
 
 " Vim plugin that runs the currently open file through Flake8,
 " a static syntax and style checker for Python source code.
-Plugin 'nvie/vim-flake8'
+Plug 'nvie/vim-flake8'
 
 
 """""" SimplyFold Plugin """""""
