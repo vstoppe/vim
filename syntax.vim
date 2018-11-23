@@ -1,7 +1,7 @@
 """"""" Syntax Checking / Highlighting """""""
 """"""""""""""""""""""""""""""""""""""""""""""
 
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 let python_highlight_all=1 
 syntax on 
