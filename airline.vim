@@ -7,10 +7,11 @@ Plug 'vim-airline/vim-airline-themes'
 
 let g:airline_powerline_fonts = 1
 
-" Loading the airline theme:
+"Loading the airline theme:
 "let g:airline_theme='solarized'
-let g:airline_theme='understated'
+"let g:airline_theme='understated'
 "let g:airline_theme='zenburn'
+let g:airline_theme='oceanicnext'
 
 " Setting the solarized theme to dark
 "let g:airline_solarized_bug='dark'
