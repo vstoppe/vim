@@ -61,6 +61,9 @@ Plug 'flazz/vim-colorschemes'
 
 source ~/.vim/oceanic-next.theme
 
+Plug 'tpope/vim-surround'
+
+
 
 " Initialize plugin system
 call plug#end()
