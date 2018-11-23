@@ -9,7 +9,7 @@ source ~/.vim/splitscreen.vim " source split screen key bindings
 " vim plugins
 " source ~/.vim/statusline.vim
 let g:python3_host_prog='/opt/local/bin/python3'
-let g:python_host_prog='/opt/local/bin/python3'
+let g:python_host_prog='/opt/local/bin/python'
 
 """ vim-plug configuration
 """"""""""""""""""""""""""
@@ -55,7 +55,7 @@ Plug 'tpope/vim-surround'
 "Plugin 'jnurmine/Zenburn'
 "Plugin 'altercation/vim-colors-solarized'
 " vim-colorschema enthaelt osx_like Farbschema
-Plug 'flazz/vim-colorschemes'
+"Plug 'flazz/vim-colorschemes'
 
 " Initialize plugin system
 call plug#end()
