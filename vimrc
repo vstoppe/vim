@@ -1,5 +1,6 @@
 """""""""" VIM-Anpassungen ohne Plugins """"""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'w0rp/ale' " Asynchronous Lint Engine
 
 
 """"""" diverses """""""
@@ -17,53 +18,29 @@ source ~/.vim/common.vim
 
 call plug#begin('~/.vim/plugged')
 
-""" autoclose (seems to collide with YouCompleMe)
-source ~/.vim/autoclose.vim
-
+source ~/.vim/autoclose.vim " autoclose (seems to collide with YouCompleMe)
+source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
+source ~/.vim/dev-icons.vim
 source ~/.vim/deoplete.vim
 source ~/.vim/fugitive.vim
+source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
 source ~/.vim/neotags.vim
+source ~/.vim/oceanic-next.theme
 source ~/.vim/puppet.vim
+source ~/.vim/smooth_scroll.vim " smooth scrolling
+source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 
-""""""" vim dev-icons """"
-" fancy symbols for all situations
-" the dev-icons are not nescessary if the full
-" mononoki font set is installed
-
-source ~/.vim/dev-icons.vim
-
+Plug 'w0rp/ale' " Asynchronous Lint Engine
 Plug 'KabbAmine/zeavim.vim'
-
-" Asynchronous Lint Engine
-Plug 'w0rp/ale'
-
-" Buffer line: Super simple vim plugin to show the list of buffers in the command bar.
-source ~/.vim/bufferline.vim
-
-""" Indentline stellt für jede Einrückungsebene eine
-""" dünne vertikale Line dar.
-source  ~/.vim/indentline.vim
-
-""" Weiches scrollen
-source ~/.vim/smooth_scroll.vim
-
-""" Snipmate stellt skeletons fuer conditionals bereit
-source ~/.vim/snipmate.vim
-
+Plug 'tpope/vim-surround'
 
 """"""" Farbschemata """""""
 "Plugin 'jnurmine/Zenburn'
 "Plugin 'altercation/vim-colors-solarized'
 " vim-colorschema enthaelt osx_like Farbschema
 Plug 'flazz/vim-colorschemes'
-
-source ~/.vim/oceanic-next.theme
-
-Plug 'tpope/vim-surround'
-
-
 
 " Initialize plugin system
 call plug#end()
