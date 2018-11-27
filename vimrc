@@ -14,7 +14,7 @@ source ~/.vim/splitscreen.vim " source split screen key bindings
 if     has('macunix')
 	let g:python_host_prog  = '/opt/local/bin/python2.7'
 	let g:python3_host_prog = '/opt/local/bin/python3.6'
-elseif has('unix')
+elseif has('linux')
 	let g:python_host_prog  = '/usr/bin/python2'
 	let g:python3_host_prog = '/usr/bin/python3'
 endif
@@ -48,7 +48,6 @@ source ~/.vim/deoplete.vim
 source ~/.vim/fugitive.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
-source ~/.vim/neotags.vim
 source ~/.vim/neosnippet.vim
 source ~/.vim/oceanic-next.theme
 source ~/.vim/puppet.vim
@@ -56,6 +55,12 @@ source ~/.vim/python.vim
 source ~/.vim/smooth_scroll.vim " smooth scrolling
 "source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/vagrant.vim
+
+if has('linux')
+	source ~/.vim/neotags.vim
+endif
+
+
 
 Plug 'w0rp/ale' " Asynchronous Lint Engine
 Plug 'KabbAmine/zeavim.vim'

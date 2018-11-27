@@ -1,8 +1,7 @@
 """ Dateispezifische Anpassungen
 """"""""""""""""""""""""""""""""""""""""
 
-" Anpassungen für Python-Dateien
-
+" Settings for python
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -13,13 +12,13 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix |
     \ set filetype=python |
 
-
-
+" Settings for javascript
 au BufNewFile,BufRead *.js
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
 
+" Settings for BASH scripts
 au BufNewFile,BufRead *.sh
     \ set tabstop=3 |
     \ set softtabstop=3 |
