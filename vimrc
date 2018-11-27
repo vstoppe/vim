@@ -40,11 +40,12 @@ source ~/.vim/fugitive.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
 source ~/.vim/neotags.vim
+source ~/.vim/neosnippet.vim
 source ~/.vim/oceanic-next.theme
 source ~/.vim/puppet.vim
 source ~/.vim/python.vim
 source ~/.vim/smooth_scroll.vim " smooth scrolling
-source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
+"source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/vagrant.vim
 
 Plug 'w0rp/ale' " Asynchronous Lint Engine
