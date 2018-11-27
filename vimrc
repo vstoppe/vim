@@ -8,8 +8,17 @@ source ~/.vim/splitscreen.vim " source split screen key bindings
 " Statusline can be a powerline/airline replacement in vim environments without
 " vim plugins
 " source ~/.vim/statusline.vim
-let g:python3_host_prog='/opt/local/bin/python3.6'
-let g:python_host_prog='/opt/local/bin/python2.7'
+
+" use different python_host_prog depending if we start vim
+" on Linux or Macos:
+if     has('macunix')
+	let g:python_host_prog  = '/opt/local/bin/python2.7'
+	let g:python3_host_prog = '/opt/local/bin/python3.6'
+elseif has('unix')
+	let g:python_host_prog  = '/usr/bin/python2'
+	let g:python3_host_prog = '/usr/bin/python3'
+endif
+
 
 """ vim-plug configuration
 """"""""""""""""""""""""""
