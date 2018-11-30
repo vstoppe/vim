@@ -11,12 +11,17 @@ source ~/.vim/splitscreen.vim " source split screen key bindings
 
 " use different python_host_prog depending if we start vim
 " on Linux or Macos:
-if     has('macunix')
-	let g:python_host_prog  = '/opt/local/bin/python2.7'
-	let g:python3_host_prog = '/opt/local/bin/python3.6'
-elseif has('linux')
-	let g:python_host_prog  = '/usr/bin/python2'
-	let g:python3_host_prog = '/usr/bin/python3'
+let s:uname = system("uname -s")
+if has('unix')
+	if  s:uname == "Darwin"
+		Darwin python
+		let g:python_host_prog  = '/opt/local/bin/python2.7'
+		let g:python3_host_prog = '/opt/local/bin/python3.6'
+	elseif s:uname == "Linux"
+		Linux python
+		let g:python_host_prog  = '/usr/bin/python2'
+		let g:python3_host_prog = '/usr/bin/python3'
+	endif
 endif
 
 
@@ -55,8 +60,10 @@ source ~/.vim/python.vim
 source ~/.vim/smooth_scroll.vim " smooth scrolling
 "source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/vagrant.vim
+source ~/.vim/neotags.vim
 
-if has('linux')
+if s:uname == "Linux"
+	neotags activated in linux
 	source ~/.vim/neotags.vim
 endif
 
