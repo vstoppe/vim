@@ -45,11 +45,12 @@ endfunction
 " source ~/.vim/powerline.vim
 
 source ~/.vim/airline.vim
-source ~/.vim/autoclose.vim " autoclose (seems to collide with YouCompleMe)
+source ~/.vim/ale.vim        " Asynchronous Lint Engine
+source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
 source ~/.vim/dev-icons.vim
-source ~/.vim/deoplete.vim
+"source ~/.vim/deoplete.vim
 source ~/.vim/fugitive.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
@@ -58,9 +59,9 @@ source ~/.vim/oceanic-next.theme
 source ~/.vim/puppet.vim
 source ~/.vim/python.vim
 source ~/.vim/smooth_scroll.vim " smooth scrolling
-"source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
+source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/vagrant.vim
-source ~/.vim/neotags.vim
+"source ~/.vim/neotags.vim
 
 if s:uname == "Linux"
 	neotags activated in linux
@@ -68,8 +69,6 @@ if s:uname == "Linux"
 endif
 
 
-
-Plug 'w0rp/ale' " Asynchronous Lint Engine
 Plug 'KabbAmine/zeavim.vim'
 Plug 'tpope/vim-surround'
 
