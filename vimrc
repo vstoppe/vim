@@ -61,13 +61,13 @@ source ~/.vim/python.vim
 source ~/.vim/smooth_scroll.vim " smooth scrolling
 source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/vagrant.vim
+source ~/.vim/yaml.vim
 "source ~/.vim/neotags.vim
 
 if s:uname == "Linux"
 	neotags activated in linux
 	source ~/.vim/neotags.vim
 endif
-
 
 Plug 'KabbAmine/zeavim.vim'
 Plug 'tpope/vim-surround'
