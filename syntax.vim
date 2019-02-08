@@ -1,9 +1,15 @@
 """"""" Syntax Checking / Highlighting """""""
 """"""""""""""""""""""""""""""""""""""""""""""
 
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
+"
+"let python_highlight_all=1 
 
-let python_highlight_all=1 
+
+" Syntax highlighting for systemd service files in Vim.
+Plug 'Matt-Deacalion/vim-systemd-syntax'
+
+
 syntax on 
 
 
