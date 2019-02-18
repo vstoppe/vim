@@ -49,6 +49,7 @@ source ~/.vim/ale.vim        " Asynchronous Lint Engine
 source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
+source ~/.vim/design.vim " settings for appearance
 source ~/.vim/dev-icons.vim
 "source ~/.vim/deoplete.vim
 source ~/.vim/fugitive.vim
@@ -82,8 +83,10 @@ Plug 'tpope/vim-surround'
 " Initialize plugin system
 call plug#end()
 
-
-source ~/.vim/design.vim " settings for appearance
+"colorscheme OceanicNext
+colorscheme gruvbox
 
 " Some old plugins which are right not not in use...
 "source ~/.vim/youcompleteme.vim " Kollidiert mit Snipmate, das fuer Pupet sehr hilfreich ist
+"
+
