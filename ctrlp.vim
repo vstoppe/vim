@@ -15,6 +15,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Change the default mapping and the default command to invoke CtrlP:
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_max_files = 20000
 
 " Once CtrlP is open:
 " * Press <F5> to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
