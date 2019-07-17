@@ -49,3 +49,13 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h
 
 " Enable folding with the spacebar
 nnoremap <space> za
+
+
+
+""" Inter Newline by pressing (shift) enter
+" Shift-Enter doesn't work in terminal
+
+nmap <Enter> o<Esc>
+"nmap <S-Enter> O<Esc>
+"nmap <CR> o<Esc>
+
