@@ -1,9 +1,11 @@
-Readme.md
+# Abstract
+
+This is my personal vim configuration as an IDE für puppet, docker, bash and other works.
 
 
-# Checkout (als Puppet_IDE)
+# Checkout
 
-`git clone http://gitlab.lindenbox.de/vst/vim.git --branch puppet_ide --single-branch ~/.vim`
+`git clone http://gitlab.lindenbox.de/vst/vim.git --branch master --single-branch ~/.vim`
 
 
 
@@ -17,14 +19,6 @@ If you like to use this configuration for neovim link like this.
 
 `ln -s ~/.vim/vimrc ~/.config/nvim/init.vim`
 
-
-## Powerline status bar
-
-Hier müssen ggf. noch ein paar Pakete nachinstalliert werden:
-
-`aptitute install psutils socat`
-
-`pip install powerline-status`
 
 ## Plugins in Vim installieren
 
