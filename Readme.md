@@ -3,15 +3,14 @@
 This is my personal vim configuration as an IDE für puppet, docker, bash and other works. It is currently used with neovim 0.3.8. The plugin management is done with vim-plug.
 
 The most important features are:
-# [airline statusline](https://github.com/vim-airline/vim-airline)
-# [Asynchronous Lint Engine](https://github.com/dense-analysis/ale) for real time syntax highlighting
-# vim-autoclose
-# [ctrl-p](https://github.com/kien/ctrlp.vim) fussy search engine
-# [fugitive](https://github.com/tpope/vim-fugitive) vim integration
-# [Nerdtree filemanager](https://github.com/scrooloose/nerdtree)
-# [Deoplete](https://github.com/Shougo/deoplete.nvim)
-# [Neosnippet](https://github.com/Shougo/neosnippet.vim)
-# [vim-puppet](https://github.com/rodjek/vim-puppet) / puppet-lint
+- [airline statusline](https://github.com/vim-airline/vim-airline)
+- [Asynchronous Lint Engine](https://github.com/dense-analysis/ale) for real time syntax highlighting
+- vim-autoclose- [ctrl-p](https://github.com/kien/ctrlp.vim) fussy search engine
+- [fugitive](https://github.com/tpope/vim-fugitive) vim integration
+- [Nerdtree filemanager](https://github.com/scrooloose/nerdtree)
+- [Deoplete](https://github.com/Shougo/deoplete.nvim)
+- [Neosnippet](https://github.com/Shougo/neosnippet.vim)
+- [vim-puppet](https://github.com/rodjek/vim-puppet) / puppet-lint
 
 
 # Checkout
