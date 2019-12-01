@@ -1,6 +1,6 @@
 # Abstract
 
-This is my personal vim configuration as an IDE für puppet, docker, bash and other works.
+This is my personal vim configuration as an IDE für puppet, docker, bash and other works. It is currently used with neovim 0.3.8.
 
 
 # Checkout
@@ -9,7 +9,7 @@ This is my personal vim configuration as an IDE für puppet, docker, bash and ot
 
 
 
-# My personal vim configuration
+# Setup
 
 Don't forget to link:
 
@@ -20,7 +20,7 @@ If you like to use this configuration for neovim link like this.
 `ln -s ~/.vim/vimrc ~/.config/nvim/init.vim`
 
 
-## Plugins in Vim installieren
+## Install plugins
 
 
 Before using Vim with the plugins a the vimplug plugin manager has to be installed:
@@ -36,8 +36,7 @@ Neovim
 `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
-
-After this Vim has to call
+Install plugins in vim with vim-plug 
 
 `:PlugInstall`
 
