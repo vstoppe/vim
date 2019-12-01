@@ -5,7 +5,7 @@ This is my personal vim configuration as an IDE für puppet, docker, bash and ot
 The most important features are:
 - [airline statusline](https://github.com/vim-airline/vim-airline)
 - [Asynchronous Lint Engine](https://github.com/dense-analysis/ale) for real time syntax highlighting
-- vim-autoclose
+- [vim-autoclose](https://github.com/vstoppe/vim)
 - [ctrl-p](https://github.com/kien/ctrlp.vim) fussy search engine
 - [fugitive](https://github.com/tpope/vim-fugitive) vim integration
 - [Nerdtree filemanager](https://github.com/scrooloose/nerdtree)
@@ -18,10 +18,14 @@ The most important features are:
 - [vim-ansible-yaml](https://github.com/chase/vim-ansible-yaml) supports work with yaml files
 
 
+# Concept
+
+The configuration of the plugins reside in the ${plugin}.vim files. Sometimes several plugins work together to provide a functionaliy. In this time they share a common .vim file. The plugin files are also ment to store the parameter for the plugins. In this way everything is in an intuitive to find place. The plugin.vim files are sourced one by one in the vimrc file. In this way plugins, or better functionalites, can be easily enabled or disabled.
+
 
 # Checkout
 
-`git clone http://gitlab.lindenbox.de/vst/vim.git --branch master --single-branch ~/.vim`
+`git clone http://github.com/vstoppe/vim.git --branch master --single-branch ~/.vim`
 
 
 
