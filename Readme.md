@@ -5,12 +5,18 @@ This is my personal vim configuration as an IDE für puppet, docker, bash and ot
 The most important features are:
 - [airline statusline](https://github.com/vim-airline/vim-airline)
 - [Asynchronous Lint Engine](https://github.com/dense-analysis/ale) for real time syntax highlighting
-- vim-autoclose- [ctrl-p](https://github.com/kien/ctrlp.vim) fussy search engine
+- vim-autoclose
+- [ctrl-p](https://github.com/kien/ctrlp.vim) fussy search engine
 - [fugitive](https://github.com/tpope/vim-fugitive) vim integration
 - [Nerdtree filemanager](https://github.com/scrooloose/nerdtree)
 - [Deoplete](https://github.com/Shougo/deoplete.nvim)
 - [Neosnippet](https://github.com/Shougo/neosnippet.vim)
 - [vim-puppet](https://github.com/rodjek/vim-puppet) / puppet-lint
+- [Snipmate](https://github.com/garbas/vim-snipmate)
+- [vim-snippets](https://github.com/honza/vim-snippets)
+- [smoothscroll](https://github.com/terryma/vim-smooth-scroll) make scrolling smooth
+- [vim-ansible-yaml](https://github.com/chase/vim-ansible-yaml) supports work with yaml files
+
 
 
 # Checkout
