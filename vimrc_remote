@@ -10,6 +10,10 @@ source ~/.vim/common.vim
 """ Statusline customisation like Powerline
 source ~/.vim/statusline.vim
 
+""" provide easy split navigation
+source ~/.vim/splitscreen.vim
+
+
 "filetype plugin on 
 
 """ file specific parameters
