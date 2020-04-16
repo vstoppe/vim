@@ -60,6 +60,7 @@ source ~/.vim/oceanic-next.theme
 source ~/.vim/puppet.vim
 source ~/.vim/python.vim
 source ~/.vim/syntax.vim " Syntax highlighting
+source ~/.vim/shellcheck.vim " Syntax checking for BASH
 source ~/.vim/smooth_scroll.vim " smooth scrolling
 source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source ~/.vim/vagrant.vim
