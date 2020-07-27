@@ -1,9 +1,9 @@
 """""""""" VIM-Anpassungen ohne Plugins """"""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-source ~/.vim/common.vim " common setting which do not affect plugins 
-source ~/.vim/filetype_settings.vim
-source ~/.vim/splitscreen.vim " source split screen key bindings
+source common.vim " common setting which do not affect plugins 
+source filetype_settings.vim
+source splitscreen.vim " source split screen key bindings
 
 " Statusline can be a powerline/airline replacement in vim environments without
 " vim plugins
@@ -44,32 +44,32 @@ endfunction
 " * Airline replaces now Powerline, because it is compatible with Neovim
 " source ~/.vim/powerline.vim
 
-source ~/.vim/airline.vim
-source ~/.vim/ale.vim        " Asynchronous Lint Engine
-source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
-source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
-source ~/.vim/ctrlp.vim
-source ~/.vim/design.vim " settings for appearance
-source ~/.vim/dev-icons.vim
+source airline.vim
+source ale.vim        " Asynchronous Lint Engine
+source autoclose.vim  " autoclose (seems to collide with YouCompleMe)
+source bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
+source ctrlp.vim
+source design.vim " settings for appearance
+source dev-icons.vim
 "source ~/.vim/deoplete.vim
-source ~/.vim/fugitive.vim
-source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
-source ~/.vim/nerdtree.vim
-source ~/.vim/neosnippet.vim
-source ~/.vim/oceanic-next.theme
-source ~/.vim/puppet.vim
-source ~/.vim/python.vim
-source ~/.vim/syntax.vim " Syntax highlighting
-source ~/.vim/shellcheck.vim " Syntax checking for BASH
-source ~/.vim/smooth_scroll.vim " smooth scrolling
-source ~/.vim/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
-source ~/.vim/vagrant.vim
-source ~/.vim/yaml.vim
+source fugitive.vim
+source indentline.vim " display for every tab a thin vertical indent line
+source nerdtree.vim
+source neosnippet.vim
+source oceanic-next.theme
+source puppet.vim
+source python.vim
+source syntax.vim " Syntax highlighting
+source shellcheck.vim " Syntax checking for BASH
+source smooth_scroll.vim " smooth scrolling
+source snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
+source vagrant.vim
+source yaml.vim
 "source ~/.vim/neotags.vim
 
 if s:uname == "Linux"
 	neotags activated in linux
-	source ~/.vim/neotags.vim
+	source neotags.vim
 endif
 
 Plug 'KabbAmine/zeavim.vim'
