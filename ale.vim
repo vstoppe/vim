@@ -5,6 +5,8 @@
 " Fix files with prettier
 let b:ale_fixers = ['prettier', 'remove_trailing_lines', 'trim_whitespace']
 
+" Fix on save
+let g:ale_fix_on_save = 1
 
 " post install (yarn install | npm install)
 
