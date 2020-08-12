@@ -47,6 +47,7 @@ endfunction
 " * Airline replaces now Powerline, because it is compatible with Neovim
 " source ~/.vim/powerline.vim
 
+source $vimdir/ansible.vim
 source $vimdir/airline.vim
 source $vimdir/ale.vim        " Asynchronous Lint Engine
 source $vimdir/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
@@ -67,7 +68,7 @@ source $vimdir/shellcheck.vim " Syntax checking for BASH
 source $vimdir/smooth_scroll.vim " smooth scrolling
 source $vimdir/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source $vimdir/vagrant.vim
-source $vimdir/yaml.vim
+"source $vimdir/yaml.vim
 "source ~/.vim/neotags.vim
 
 if s:uname == "Linux"
