@@ -1,3 +1,5 @@
+" vim-ansible-yaml in not maintained anymore. It is better to get something
+" different. 
 Plug 'chase/vim-ansible-yaml' " also helps with non ansible yaml files
 
 " source: https://github.com/chase/vim-ansible-yaml
