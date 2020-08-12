@@ -18,6 +18,9 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 let g:ale_completion_enabled = 1
 
+" automatic imports from external modules
+let g:ale_completion_autoimport = 1
+
 " ALE provides an omni-completion function you can use for triggering completion manually with <C-x><C-o>.
 set omnifunc=ale#completion#OmniFunc
 
