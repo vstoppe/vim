@@ -19,7 +19,7 @@ if has('unix')
 	endif
 endif
 
-source $vimdir/common.vim " common setting which do not affect plugins 
+source $vimdir/common.vim " common setting which do not affect plugins
 source $vimdir/filetype_settings.vim
 source $vimdir/splitscreen.vim " source split screen key bindings
 
@@ -55,18 +55,17 @@ source $vimdir/bufferline.vim " Super simple vim plugin to show the list of buff
 source $vimdir/ctrlp.vim
 source $vimdir/design.vim " settings for appearance
 source $vimdir/dev-icons.vim
-"source ~/.vim/deoplete.vim
 source $vimdir/fugitive.vim
 source $vimdir/indentline.vim " display for every tab a thin vertical indent line
 source $vimdir/nerdtree.vim
-source $vimdir/neosnippet.vim
+source $vimdir/neosnippet.vim " includes deoplete
 source $vimdir/oceanic-next.theme
 source $vimdir/puppet.vim
 source $vimdir/python.vim
 source $vimdir/syntax.vim " Syntax highlighting
 source $vimdir/shellcheck.vim " Syntax checking for BASH
 source $vimdir/smooth_scroll.vim " smooth scrolling
-source $vimdir/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
+"source $vimdir/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
 source $vimdir/vagrant.vim
 "source $vimdir/yaml.vim
 "source ~/.vim/neotags.vim
@@ -94,4 +93,3 @@ colorscheme gruvbox
 " Some old plugins which are right not not in use...
 "source ~/.vim/youcompleteme.vim " Kollidiert mit Snipmate, das fuer Pupet sehr hilfreich ist
 "
-
