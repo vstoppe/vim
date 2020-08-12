@@ -1,5 +1,6 @@
 bundle
 plugged
+init.vim
 
 swap
 *.swp
