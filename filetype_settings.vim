@@ -24,3 +24,8 @@ au BufNewFile,BufRead *.sh
     \ set softtabstop=3 |
     \ set shiftwidth=3 |
     \ match BadWhitespace /\s\+$/
+
+" Setting for Ansible hosts file
+au BufNewFile,BufRead hosts
+	\ set expandtab |
+	\ set shiftwidth=2
