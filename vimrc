@@ -65,7 +65,7 @@ source $vimdir/python.vim
 source $vimdir/syntax.vim " Syntax highlighting
 source $vimdir/shellcheck.vim " Syntax checking for BASH
 source $vimdir/smooth_scroll.vim " smooth scrolling
-"source $vimdir/snipmate.vim " Snipmate stellt skeletons fuer conditionals bereit
+source $vimdir/snipmate.vim " provides sometimes better skeletons than neosnipppet
 source $vimdir/vagrant.vim
 "source $vimdir/yaml.vim
 "source ~/.vim/neotags.vim
