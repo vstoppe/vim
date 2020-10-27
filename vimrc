@@ -19,9 +19,9 @@ if has('unix')
 	endif
 endif
 
-source $vimdir/common.vim " common setting which do not affect plugins
-source $vimdir/filetype_settings.vim
-source $vimdir/splitscreen.vim " source split screen key bindings
+source ~/.vim/common.vim " common setting which do not affect plugins
+source ~/.vim/filetype_settings.vim
+source ~/.vim/splitscreen.vim " source split screen key bindings
 
 " Statusline can be a powerline/airline replacement in vim environments without
 " vim plugins
@@ -47,27 +47,27 @@ endfunction
 " * Airline replaces now Powerline, because it is compatible with Neovim
 " source ~/.vim/powerline.vim
 
-source $vimdir/ansible.vim
-source $vimdir/airline.vim
-source $vimdir/ale.vim        " Asynchronous Lint Engine
-source $vimdir/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
-source $vimdir/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
-source $vimdir/ctrlp.vim
-source $vimdir/design.vim " settings for appearance
-source $vimdir/dev-icons.vim
-source $vimdir/fugitive.vim
-source $vimdir/indentline.vim " display for every tab a thin vertical indent line
-source $vimdir/nerdtree.vim
-source $vimdir/neosnippet.vim " includes deoplete
-source $vimdir/oceanic-next.theme
-source $vimdir/puppet.vim
-source $vimdir/python.vim
-source $vimdir/syntax.vim " Syntax highlighting
-source $vimdir/shellcheck.vim " Syntax checking for BASH
-source $vimdir/smooth_scroll.vim " smooth scrolling
-source $vimdir/snipmate.vim " provides sometimes better skeletons than neosnipppet
-source $vimdir/vagrant.vim
-"source $vimdir/yaml.vim
+source ~/.vim/ansible.vim
+source ~/.vim/airline.vim
+source ~/.vim/ale.vim        " Asynchronous Lint Engine
+source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
+source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
+source ~/.vim/ctrlp.vim
+source ~/.vim/design.vim " settings for appearance
+source ~/.vim/dev-icons.vim
+source ~/.vim/fugitive.vim
+source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
+source ~/.vim/nerdtree.vim
+source ~/.vim/neosnippet.vim " includes deoplete
+source ~/.vim/oceanic-next.theme
+source ~/.vim/puppet.vim
+source ~/.vim/python.vim
+source ~/.vim/syntax.vim " Syntax highlighting
+source ~/.vim/shellcheck.vim " Syntax checking for BASH
+source ~/.vim/smooth_scroll.vim " smooth scrolling
+source ~/.vim/snipmate.vim " provides sometimes better skeletons than neosnipppet
+source ~/.vim/vagrant.vim
+"source ~/.vim/yaml.vim
 "source ~/.vim/neotags.vim
 
 if s:uname == "Linux"
