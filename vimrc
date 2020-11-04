@@ -76,6 +76,7 @@ if s:uname == "Linux"
 endif
 
 Plug 'KabbAmine/zeavim.vim'
+Plug 'cyberkov/openhab-vim'
 Plug 'tpope/vim-surround'
 
 """"""" Farbschemata """""""
