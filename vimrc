@@ -50,7 +50,8 @@ endfunction
 source ~/.vim/ansible.vim
 source ~/.vim/airline.vim
 source ~/.vim/ale.vim        " Asynchronous Lint Engine
-source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
+"source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
+source ~/.vim/auto-pairs.vim " replaces autoclose
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
 source ~/.vim/design.vim " settings for appearance
