@@ -20,7 +20,7 @@ The most important features are:
 
 # Concept
 
-The configuration of the plugins reside in the ${plugin}.vim files. Sometimes several plugins work together to provide a functionaliy. In this time they share a common .vim file. The plugin files are also ment to store the parameter for the plugins. In this way everything is in an intuitive to find place. The plugin.vim files are sourced one by one in the vimrc file. In this way plugins, or better functionalites, can be easily enabled or disabled.
+The configuration of the plugins reside in the ~/.vim/${plugin}.vim files. Sometimes several plugins work together to provide a functionaliy. In this situation they share a common .vim file. The plugin files are also ment to store the parameter for the plugins. In this way everything is in an intuitive place to find. The ${plugin}.vim files are sourced one by one in the vimrc file. In this way plugins, or better functionalites, can be easily enabled or disabled.
 
 
 # Checkout
