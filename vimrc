@@ -70,6 +70,7 @@ source ~/.vim/snipmate.vim " provides sometimes better skeletons than neosnipppe
 source ~/.vim/vagrant.vim
 "source ~/.vim/yaml.vim
 "source ~/.vim/neotags.vim
+source ~/.vim/xmledit.vim
 
 if s:uname == "Linux"
 	neotags activated in linux
