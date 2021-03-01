@@ -7,7 +7,7 @@
 " to provide features like python code looking 
 " for bugs, refactoring and some other usefull things.
 
-Plug 'klen/python-mode'
+" Plug 'klen/python-mode'
 
 
 """""""""""""""""""""""""""""""""""""

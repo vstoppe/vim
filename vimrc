@@ -56,6 +56,7 @@ source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffe
 source ~/.vim/ctrlp.vim
 source ~/.vim/design.vim " settings for appearance
 source ~/.vim/dev-icons.vim
+source ~/.vim/django_support.vim
 source ~/.vim/fugitive.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
