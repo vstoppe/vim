@@ -11,6 +11,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
     \ set filetype=python |
+	\ set textwidth=160   |
 
 " Settings for javascript
 au BufNewFile,BufRead *.js
