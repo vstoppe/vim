@@ -6,6 +6,7 @@ Plug 'chase/vim-ansible-yaml' " also helps with non ansible yaml files
 
 au BufNewFile,BufRead *.yaml
 	\ set ft=ansible |
+	\ set shiftwidth=2
 
 au BufNewFile,BufRead *.yml
 	\ set ft=ansible |
