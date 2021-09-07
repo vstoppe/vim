@@ -8,7 +8,7 @@ if has('unix')
 	if  s:uname == "Darwin"
 		Darwin python
 		let g:python_host_prog  = '/opt/local/bin/python2.7'
-		let g:python3_host_prog = '/opt/local/bin/python3.6'
+		let g:python3_host_prog = '/usr/local/bin/python3.9'
 		vimdir = '~/.vim'
 		set vimdir = '~/.vim'
 	elseif s:uname == "Linux"
