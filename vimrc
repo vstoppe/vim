@@ -19,13 +19,14 @@ if has('unix')
 	endif
 endif
 
-source ~/.vim/common.vim " common setting which do not affect plugins
-source ~/.vim/filetype_settings.vim
-source ~/.vim/splitscreen.vim " source split screen key bindings
+source ~/.vim/native_common.vim " common setting which do not affect plugins
+source ~/.vim/native_filetype_settings.vim
+source ~/.vim/native_splitscreen.vim " source split screen key bindings
+source ~/.vim/native_netrw.vim
 
 " Statusline can be a powerline/airline replacement in vim environments without
 " vim plugins
-" source ~/.vim/statusline.vim
+" source ~/.vim/native_statusline.vim
 
 
 """ vim-plug configuration
