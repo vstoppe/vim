@@ -19,10 +19,11 @@ if has('unix')
 	endif
 endif
 
+source ~/.vim/native_autoclose.vim
 source ~/.vim/native_common.vim " common setting which do not affect plugins
 source ~/.vim/native_filetype_settings.vim
-source ~/.vim/native_splitscreen.vim " source split screen key bindings
 source ~/.vim/native_netrw.vim
+source ~/.vim/native_splitscreen.vim " source split screen key bindings
 
 " Statusline can be a powerline/airline replacement in vim environments without
 " vim plugins
@@ -52,7 +53,7 @@ source ~/.vim/ansible.vim
 source ~/.vim/airline.vim
 source ~/.vim/ale.vim        " Asynchronous Lint Engine
 "source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
-source ~/.vim/auto-pairs.vim " replaces autoclose
+"source ~/.vim/auto-pairs.vim " replaces autoclose
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
 source ~/.vim/design.vim " settings for appearance
