@@ -10,9 +10,6 @@
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 
 
-syntax on 
-
-
 " Syntastic uses the `:sign` commands 
 " (provided that the |+signs| feature is 
 " compiled in) to mark lines with errors 
