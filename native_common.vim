@@ -2,7 +2,7 @@
 " * https://www.youtube.com/watch?v=XA2WjJbmmoM
 
 " disable compatibility mode for exta functions:
-set nocompatibility
+set nocompatible
 
 " enable syntax and plugins (at least netrw)
 syntax enable
@@ -12,7 +12,7 @@ filetype plugin on
 """ Keyboard mappings
 "
 " Control+c fuehrt ein newline im insertmode ein
-imap <C-c> <CR><Esc>kA<CR> 
+imap <C-c> <CR><Esc>kA<CR>
 " Control+f gedacht im im insertmode hinter ein Anführungszeichen zu springen
 imap <C-f> <Esc>la
 
@@ -69,3 +69,19 @@ nmap <Enter> o<Esc>
 "nmap <S-Enter> O<Esc>
 "nmap <CR> o<Esc>
 
+
+
+
+""""""" TAG JUMPING """""""
+"""""""""""""""""""""""""""
+
+" Create the `tags` file (may need to install ctags first)
+command! MakeTags !ctags -R .
+
+" NOW WE CAN:
+" - Use <C-]> to jump to tag under cursor
+" - Use g^] for ambiguous tags
+" - Use <C^t> to jump back up the tag stack
+
+" THINGS TO CONSIDER:
+" - This doesn't help if you want a visual list of tags

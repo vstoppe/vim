@@ -4,41 +4,30 @@
 """"""" diverses """""""
 """"""""""""""""""""""""
 
-""" common settings:
-source ~/.vim/common.vim
+""" settings for native filemanager
+source~/.vim/native_netrw.vim
 
-""" Statusline customisation like Powerline
-source ~/.vim/statusline.vim
+""" common settings:
+source ~/.vim/native_common.vim
+
+""" Autoclose enhancement
+source ~/.vim/native_autoclose.vim
+
+""" filetype settings
+source  ~/.vim/native_filetype_settings.vim
 
 """ provide easy split navigation
-source ~/.vim/splitscreen.vim
+source ~/.vim/native_splitscreen.vim
+
+""" Statusline customisation like Powerline
+source ~/.vim/native_statusline.vim
+
+"""" configure integrated filemanager
 
 
-"filetype plugin on 
+"filetype plugin on
 
 """ file specific parameters
-
-au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix
-
-
-au BufNewFile,BufRead *.js
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
-
-au BufNewFile,BufRead *.sh
-    \ set tabstop=3 |
-    \ set softtabstop=3 |
-    \ set shiftwidth=3 |
-    \ match BadWhitespace /\s\+$/
-
 
 
 """ Enable code folding
