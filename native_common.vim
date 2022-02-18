@@ -13,6 +13,12 @@ filetype plugin on
 "
 " Control+c fuehrt ein newline im insertmode ein
 imap <C-c> <CR><Esc>kA<CR>
+
+
+""" Keyboard mappings
+"
+" Control+c fuehrt ein newline im insertmode ein
+imap <C-c> <CR><Esc>kA<CR>
 " Control+f gedacht im im insertmode hinter ein Anführungszeichen zu springen
 imap <C-f> <Esc>la
 
