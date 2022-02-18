@@ -62,7 +62,7 @@ source ~/.vim/django_support.vim
 source ~/.vim/fugitive.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
-source ~/.vim/neosnippet.vim " includes deoplete
+"source ~/.vim/neosnippet.vim " includes deoplete / conflicts with ctags
 source ~/.vim/oceanic-next.theme
 source ~/.vim/puppet.vim
 source ~/.vim/python.vim
