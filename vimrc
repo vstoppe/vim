@@ -52,8 +52,6 @@ endfunction
 source ~/.vim/ansible.vim
 source ~/.vim/airline.vim
 source ~/.vim/ale.vim        " Asynchronous Lint Engine
-"source ~/.vim/autoclose.vim  " autoclose (seems to collide with YouCompleMe)
-"source ~/.vim/auto-pairs.vim " replaces autoclose
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
 source ~/.vim/design.vim " settings for appearance
@@ -95,7 +93,3 @@ call plug#end()
 
 "colorscheme OceanicNext
 colorscheme gruvbox
-
-" Some old plugins which are right not not in use...
-"source ~/.vim/youcompleteme.vim " Kollidiert mit Snipmate, das fuer Pupet sehr hilfreich ist
-"
