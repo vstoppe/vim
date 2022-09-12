@@ -37,4 +37,6 @@ source ~/.vim/native_statusline.vim
 " Enable folding with the spacebar
 nnoremap <space> za
 
-set background=dark
+""" Set manually gruvbox colortheme in light mode
+set background=light
+source ~/.vim/native_gruvbox.vim
