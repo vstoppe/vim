@@ -40,4 +40,4 @@ nnoremap <space> za
 """ Set manually gruvbox colortheme in light mode
 " taken from: https://github.com/morhetz/gruvbox
 set background=light
-source ~/.vim/native_gruvbox.vim
+colorscheme gruvbox
