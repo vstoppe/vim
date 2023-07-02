@@ -49,20 +49,21 @@ endfunction
 " * Airline replaces now Powerline, because it is compatible with Neovim
 " source ~/.vim/powerline.vim
 
-source ~/.vim/ansible.vim
+"source ~/.vim/ansible.vim
 source ~/.vim/airline.vim
 source ~/.vim/ale.vim        " Asynchronous Lint Engine
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
 source ~/.vim/design.vim " settings for appearance
 source ~/.vim/dev-icons.vim
-source ~/.vim/django_support.vim
+"source ~/.vim/django_support.vim
 source ~/.vim/fugitive.vim
+source ~/.vim/gitblame.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
 "source ~/.vim/neosnippet.vim " includes deoplete / conflicts with ctags
 source ~/.vim/oceanic-next.theme
-source ~/.vim/puppet.vim
+"source ~/.vim/puppet.vim
 source ~/.vim/python.vim
 source ~/.vim/syntax.vim " Syntax highlighting
 source ~/.vim/shellcheck.vim " Syntax checking for BASH
