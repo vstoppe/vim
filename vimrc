@@ -79,9 +79,14 @@ if s:uname == "Linux"
 	source neotags.vim
 endif
 
-Plug 'KabbAmine/zeavim.vim'
-Plug 'cyberkov/openhab-vim'
-Plug 'tpope/vim-surround'
+"Plug 'KabbAmine/zeavim.vim'
+"Plug 'cyberkov/openhab-vim'
+
+" From mastering the Vim Language:
+source ~/.vim/custom-operators.vim
+source ~/.vim/custom-text-objects.vim
+
+
 
 """"""" Farbschemata """""""
 "Plugin 'jnurmine/Zenburn'
