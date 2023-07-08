@@ -79,8 +79,6 @@ if s:uname == "Linux"
 	source neotags.vim
 endif
 
-"Plug 'KabbAmine/zeavim.vim'
-"Plug 'cyberkov/openhab-vim'
 
 " From mastering the Vim Language:
 source ~/.vim/custom-operators.vim
@@ -88,11 +86,6 @@ source ~/.vim/custom-text-objects.vim
 
 
 
-""""""" Farbschemata """""""
-"Plugin 'jnurmine/Zenburn'
-"Plugin 'altercation/vim-colors-solarized'
-" vim-colorschema enthaelt osx_like Farbschema
-"Plug 'flazz/vim-colorschemes'
 
 " Initialize plugin system
 call plug#end()
