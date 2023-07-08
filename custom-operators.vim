@@ -28,10 +28,3 @@ Plug 'tpope/vim-commentary'
 " gcc => Comment or uncomment [count] lines.
 " {Visual}gc => Comment or uncomment the highlighted lines.
 " gcgc / gcu => uncomment
-
-
-Plug 'kana/vim-textobj-entire'
-" https://github.com/kana/vim-textobj-entire
-
-" ae => targets the entire content ofthe current buffer
-" ia => does not include leading and trailing empty lines
