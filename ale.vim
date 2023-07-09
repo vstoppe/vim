@@ -28,5 +28,15 @@ set omnifunc=ale#completion#OmniFunc
 " keep the sign gutter open
 let g:ale_sign_column_always = 1
 
+
+" Do not highlight messages matching strings like these.
+let b:ale_exclude_highlights = ['line too long']
+
+" no virtual text at end of lines
+let g:ale_virtualtext_cursor = 'disabled'
+
+" Airline integration:
+let g:airline#extensions#ale#enabled = 1
+
 "Plug 'w0rp/ale' " Asynchronous Lint Engine
 Plug 'dense-analysis/ale'
