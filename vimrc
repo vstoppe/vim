@@ -25,9 +25,6 @@ source ~/.vim/native_filetype_settings.vim
 source ~/.vim/native_netrw.vim
 source ~/.vim/native_splitscreen.vim " source split screen key bindings
 
-" Statusline can be a powerline/airline replacement in vim environments without
-" vim plugins
-" source ~/.vim/native_statusline.vim
 
 
 """ vim-plug configuration
@@ -39,40 +36,32 @@ function! DoRemote(arg)
     UpdateRemotePlugins
 endfunction
 
-
-""" Auswahl der Statusbar """
-"""""""""""""""""""""""""""""
-
-" * Powerline kann unter Umständen VIM verlangsamen
-" * Stellt aber mehr informationen dar.
-" * Statusline ist schlanker, aber nicht so übersichtlich.
-" * Airline replaces now Powerline, because it is compatible with Neovim
-" source ~/.vim/powerline.vim
-
-"source ~/.vim/ansible.vim
 source ~/.vim/airline.vim
 source ~/.vim/ale.vim        " Asynchronous Lint Engine
 source ~/.vim/bufferline.vim " Super simple vim plugin to show the list of buffers in the command bar.
 source ~/.vim/ctrlp.vim
 source ~/.vim/design.vim " settings for appearance
 source ~/.vim/dev-icons.vim
-"source ~/.vim/django_support.vim
 source ~/.vim/fugitive.vim
 source ~/.vim/gitblame.vim
 source ~/.vim/indentline.vim " display for every tab a thin vertical indent line
 source ~/.vim/nerdtree.vim
-"source ~/.vim/neosnippet.vim " includes deoplete / conflicts with ctags
 source ~/.vim/oceanic-next.theme
-"source ~/.vim/puppet.vim
 source ~/.vim/python.vim
 source ~/.vim/syntax.vim " Syntax highlighting
 source ~/.vim/shellcheck.vim " Syntax checking for BASH
 source ~/.vim/smooth_scroll.vim " smooth scrolling
 source ~/.vim/snipmate.vim " provides sometimes better skeletons than neosnipppet
 source ~/.vim/vagrant.vim
+source ~/.vim/xmledit.vim
+
+
+"source ~/.vim/ansible.vim
+"source ~/.vim/django_support.vim
+"source ~/.vim/neosnippet.vim " includes deoplete / conflicts with ctags
+"source ~/.vim/puppet.vim
 "source ~/.vim/yaml.vim
 "source ~/.vim/neotags.vim
-source ~/.vim/xmledit.vim
 
 if s:uname == "Linux"
 	neotags activated in linux
@@ -85,7 +74,7 @@ source ~/.vim/custom-operators.vim
 source ~/.vim/custom-text-objects.vim
 
 
-
+"Plug 'towolf/vim-helm'
 
 " Initialize plugin system
 call plug#end()
