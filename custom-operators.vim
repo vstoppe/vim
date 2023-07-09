@@ -28,3 +28,11 @@ Plug 'tpope/vim-commentary'
 " gcc => Comment or uncomment [count] lines.
 " {Visual}gc => Comment or uncomment the highlighted lines.
 " gcgc / gcu => uncomment
+
+
+Plug 'christoomey/vim-sort-motion'
+" https://github.com/christoomey/vim-sort-motion 
+
+" gs2j => Sort down two lines (current + 2 below)
+" gsip => Sort the current paragraph
+" gsii => Sort the current indentation level (requires text-obj-indent plugin)
