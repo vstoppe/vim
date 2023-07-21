@@ -84,6 +84,10 @@ return require('packer').startup(function(use)
         config = [[require("config.telescope")]]
     }
 
+    -- git
+    use { 'lewis6991/gitsigns.nvim',
+        config = [[require("config.gitsigns")]],
+    }
 
 
     -- Automatically set up your configuration after cloning packer.nvim
