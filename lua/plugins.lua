@@ -66,9 +66,15 @@ return require('packer').startup(function(use)
         requires = { "nvim-web-devicons" },
     })
 
+    -- Tiny enhancements
     use 'm4xshen/autoclose.nvim'
     use "lukas-reineke/indent-blankline.nvim"
 
+    -- Treesitter
+    use { 'nvim-treesitter/nvim-treesitter',
+        config = [[require("config.treesitter")]],
+        run = ':TSUpdate'
+    }
 
 
 
