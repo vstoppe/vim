@@ -59,15 +59,17 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
 
     -- Statusline / lua-line
-    use({
+    use {
         "nvim-lualine/lualine.nvim",
         event = "BufEnter",
         config = [[require("config.lualine")]],
         requires = { "nvim-web-devicons" },
-    })
+    }
 
     -- Tiny enhancements
-    use 'm4xshen/autoclose.nvim'
+    use { 'm4xshen/autoclose.nvim',
+        require("autoclose").setup()
+    }
     use "lukas-reineke/indent-blankline.nvim"
 
     -- Treesitter
