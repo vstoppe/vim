@@ -78,6 +78,12 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
 
+    -- Telescope
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.2', 
+        requires = { {'nvim-lua/plenary.nvim'} },
+        config = [[require("config.telescope")]]
+    }
+
 
 
     -- Automatically set up your configuration after cloning packer.nvim
