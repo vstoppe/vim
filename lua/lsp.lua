@@ -42,9 +42,21 @@ lspconfig.pylsp.setup({
   on_attach = on_attach,
 })
 
-lspconfig.bashls.setup({
-  on_attach = on_attach,
-})
+-- lspconfig.bashls.setup({
+--   on_attach = on_attach,
+-- })
+
+require'lspconfig'.bashls.setup{}
+require('lspconfig').yamlls.setup{}
+require'lspconfig'.rust_analyzer.setup{
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = true;
+      }
+    }
+  }
+}
 
 -- Mason setup
 
@@ -64,5 +76,3 @@ require('mason-lspconfig').setup({
     -- List of available languae servers can be found here
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 })
-
-
