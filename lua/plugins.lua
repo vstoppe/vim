@@ -93,9 +93,17 @@ return require('packer').startup(function(use)
     }
 
     -- git
-    use { 'lewis6991/gitsigns.nvim',
-        config = [[require("config.gitsigns")]],
-    }
+   use { 'lewis6991/gitsigns.nvim',
+      config = [[require("config.gitsigns")]]}
+   use { 'NeogitOrg/neogit', 
+      requires = {
+         'nvim-lua/plenary.nvim',
+         'sindrets/diffview.nvim'
+      },
+      require("neogit").setup(),
+      config = [[require("config.neogit")]]
+   }
+
 
 
     -- Automatically set up your configuration after cloning packer.nvim
