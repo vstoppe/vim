@@ -78,6 +78,7 @@ return require('packer').startup(function(use)
    use { 'terrortylor/nvim-comment',
       require("nvim_comment").setup()
    }
+   use { 'christoomey/vim-sort-motion' }
 
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter',
