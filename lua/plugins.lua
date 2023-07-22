@@ -80,8 +80,12 @@ return require('packer').startup(function(use)
 
     -- Telescope
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.2', 
-        requires = { {'nvim-lua/plenary.nvim'} },
-        config = [[require("config.telescope")]]
+        requires = { 
+            {'nvim-lua/plenary.nvim'},
+            {'dapc11/telescope-yaml.nvim'}
+        },
+        config = [[require("config.telescope")]],
+        -- requires = { "dapc11/telescope-yaml.nvim" }
     }
 
     -- git
