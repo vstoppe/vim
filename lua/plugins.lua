@@ -71,6 +71,10 @@ return require('packer').startup(function(use)
         require("autoclose").setup()
     }
     use "lukas-reineke/indent-blankline.nvim"
+    use { "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = [[require("nvim-surround").setup()]]
+    } 
 
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter',
