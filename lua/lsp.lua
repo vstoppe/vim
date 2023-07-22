@@ -39,9 +39,12 @@ local on_attach = function(client, bufnr)
 end
 
 lspconfig.pylsp.setup({
-    on_attach = on_attach,
+  on_attach = on_attach,
 })
 
+lspconfig.bashls.setup({
+  on_attach = on_attach,
+})
 
 -- Mason setup
 
