@@ -57,7 +57,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
-    ensure_installed = { 'bashls', 'helm_ls', 'pylsp', 'lua_ls', 'rust_analyzer', 'yamlls' },
+    ensure_installed = { 'bashls', 'helm_ls', 'pylsp', 'lua_ls', 'rust_analyzer', 'vimls', 'yamlls' },
     -- List of available languae servers can be found here
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 })
