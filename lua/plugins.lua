@@ -75,6 +75,9 @@ return require('packer').startup(function(use)
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
         config = [[require("nvim-surround").setup()]]
     } 
+   use { 'terrortylor/nvim-comment',
+      require("nvim_comment").setup()
+   }
 
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter',
