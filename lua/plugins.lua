@@ -63,7 +63,7 @@ return require('packer').startup(function(use)
         "nvim-lualine/lualine.nvim",
         event = "BufEnter",
         config = [[require("config.lualine")]],
-        requires = { "nvim-web-devicons" },
+        requires = { "nvim-tree/nvim-web-devicons" },
     }
 
     -- Tiny enhancements
@@ -107,7 +107,15 @@ return require('packer').startup(function(use)
    --    require("neogit").setup(),
    --    config = [[require("config.neogit")]]
    -- }
-   use { 'tpope/vim-fugitive' }
+   use { 'tpope/vim-fugitive',
+      require("nvim-tree").setup()
+   }
+
+   -- nvim-tree 
+   use { 'nvim-tree/nvim-tree.lua',
+      config = [[require("config.nvim-tree")]],
+      requires = { "nvim-tree/nvim-web-devicons" },
+   }
 
 
 

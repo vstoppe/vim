@@ -34,3 +34,8 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 
+-- nvim-tree --
+vim.opt.termguicolors = true
+local nvimtree = require("nvim-tree.api")
+vim.keymap.set('n', '<leader>tt', nvimtree.tree.toggle, {})
+
