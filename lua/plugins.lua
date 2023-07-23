@@ -45,83 +45,81 @@ return require('packer').startup(function(use)
 
 	use 'ellisonleao/gruvbox.nvim'
 
-    -- Plugins for completions engine
+  -- Plugins for completions engine
 
-    use { 'williamboman/mason.nvim' }
-    use { 'williamboman/mason-lspconfig.nvim'}
-    use { 'neovim/nvim-lspconfig' }
-    use { 'hrsh7th/nvim-cmp', config = [[require('config.nvim-cmp')]] }
-    use { 'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' }
-    use { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' }        -- buffer auto-completion
-    use { 'hrsh7th/cmp-path', after = 'nvim-cmp' }          -- path auto-completion
-    use { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' }       -- cmdline auto-completion
-    use 'L3MON4D3/LuaSnip'
-    use 'saadparwaiz1/cmp_luasnip'
+  use { "williamboman/mason.nvim" }
+  use { "williamboman/mason-lspconfig.nvim"}
+  use { "neovim/nvim-lspconfig" }
+  use { "hrsh7th/nvim-cmp", config = [[require('config.nvim-cmp')]] }
+  use { "hrsh7th/cmp-nvim-lsp", after = 'nvim-cmp' }
+  use { "hrsh7th/cmp-buffer", after = 'nvim-cmp' }        -- buffer auto-completion
+  use { "hrsh7th/cmp-path", after = 'nvim-cmp' }          -- path auto-completion
+  use { "hrsh7th/cmp-cmdline", after = 'nvim-cmp' }       -- cmdline auto-completion
+  use { 'L3MON4D3/LuaSnip' }
+  use { 'saadparwaiz1/cmp_luasnip' }
 
-    -- Statusline / lua-line
-    use {
-        "nvim-lualine/lualine.nvim",
-        event = "BufEnter",
-        config = [[require("config.lualine")]],
-        requires = { "nvim-tree/nvim-web-devicons" },
-    }
+  -- Statusline / lua-line
+  use { "nvim-lualine/lualine.nvim",
+      event = "BufEnter",
+      config = [[require("config.lualine")]],
+      requires = { "nvim-tree/nvim-web-devicons" },
+  }
 
-    -- Tiny enhancements
-    use { 'm4xshen/autoclose.nvim',
-        require("autoclose").setup()
-    }
-    use "lukas-reineke/indent-blankline.nvim"
-    use { "kylechui/nvim-surround",
+  -- Tiny enhancements
+  use { "m4xshen/autoclose.nvim",
+      require("autoclose").setup()
+  }
+  use { "lukas-reineke/indent-blankline.nvim" }
+  use { "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
         config = [[require("nvim-surround").setup()]]
-    } 
-   use { 'terrortylor/nvim-comment',
-      require("nvim_comment").setup()
-   }
-   use { 'christoomey/vim-sort-motion' }
+  } 
+  use { "terrortylor/nvim-comment",
+    require("nvim_comment").setup()
+  }
+  use { "christoomey/vim-sort-motion" }
+  use { "cuducos/yaml.nvim",
+    ft = { "yaml" }, -- optional
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-telescope/telescope.nvim" -- optional
+    },
+  }
 
-    -- Treesitter
-    use { 'nvim-treesitter/nvim-treesitter',
-        config = [[require("config.treesitter")]],
-        run = ':TSUpdate'
-    }
+  -- Treesitter
+  use { 'nvim-treesitter/nvim-treesitter',
+      config = [[require("config.treesitter")]],
+      run = ':TSUpdate'
+  }
 
-    -- Telescope
-    use { 'nvim-telescope/telescope.nvim', tag = '0.1.2', 
-        requires = { 
-            {'nvim-lua/plenary.nvim'},
-            {'dapc11/telescope-yaml.nvim'}
-        },
-        config = [[require("config.telescope")]],
+  -- Telescope
+  use { "nvim-telescope/telescope.nvim", tag = '0.1.2',
+    requires = {
+      {"nvim-lua/plenary.nvim"},
+      {"dapc11/telescope-yaml.nvim"}
+    },
+    config = [[require("config.telescope")]],
         -- requires = { "dapc11/telescope-yaml.nvim" }
     }
 
     -- git
-   use { 'lewis6991/gitsigns.nvim',
+   use { "lewis6991/gitsigns.nvim",
       config = [[require("config.gitsigns")]]}
-   -- use { 'NeogitOrg/neogit', 
-   --    requires = {
-   --       'nvim-lua/plenary.nvim',
-   --       'sindrets/diffview.nvim'
-   --    },
-   --    require("neogit").setup(),
-   --    config = [[require("config.neogit")]]
-   -- }
-   use { 'tpope/vim-fugitive',
+   use { "tpope/vim-fugitive",
       require("nvim-tree").setup()
    }
 
    -- nvim-tree 
-   use { 'nvim-tree/nvim-tree.lua',
+   use { "nvim-tree/nvim-tree.lua",
       config = [[require("config.nvim-tree")]],
       requires = { "nvim-tree/nvim-web-devicons" },
    }
 
 
 
-    -- Automatically set up your configuration after cloning packer.nvim
-    -- Put this at the end after all plugins
-    if packer_bootstrap then
-        require('packer').sync()
-    end
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
