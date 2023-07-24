@@ -73,7 +73,7 @@ return require('packer').startup(function(use)
   use { "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
         config = [[require("nvim-surround").setup()]]
-  } 
+  }
   use { "terrortylor/nvim-comment",
     require("nvim_comment").setup()
   }
@@ -88,8 +88,11 @@ return require('packer').startup(function(use)
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter',
-      config = [[require("config.treesitter")]],
-      run = ':TSUpdate'
+    config = [[require("config.treesitter")]],
+    run = ':TSUpdate'
+  }
+  use { 'HiPhish/nvim-ts-rainbow2',
+    requires = { "nvim-treesitter/nvim-treesitter" }
   }
 
   -- Telescope
