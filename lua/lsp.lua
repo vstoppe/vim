@@ -43,6 +43,7 @@ lspconfig.pylsp.setup({ on_attach = on_attach, })
 require'lspconfig'.bashls.setup{}
 require('lspconfig').yamlls.setup{}
 require'lspconfig'.lua_ls.setup {}
+require'lspconfig'.rnix.setup {}
 require('lspconfig').vimls.setup{}
 require'lspconfig'.rust_analyzer.setup{
   settings = {
@@ -68,7 +69,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
-    ensure_installed = { 'bashls', 'helm_ls', 'pylsp', 'lua_ls', 'rust_analyzer', 'vimls', 'yamlls' },
+    ensure_installed = { 'bashls', 'rnix', 'helm_ls', 'pylsp', 'lua_ls', 'rust_analyzer', 'vimls', 'yamlls' },
     -- List of available languae servers can be found here
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 })
