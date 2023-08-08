@@ -40,12 +40,12 @@ end
 
 -- Setup the language servers
 lspconfig.pylsp.setup({ on_attach = on_attach, })
-require'lspconfig'.bashls.setup{}
+require('lspconfig').bashls.setup{}
 require('lspconfig').yamlls.setup{}
-require'lspconfig'.lua_ls.setup {}
-require'lspconfig'.rnix.setup {}
+require('lspconfig').lua_ls.setup {}
+require('lspconfig').rnix.setup {}
 require('lspconfig').vimls.setup{}
-require'lspconfig'.rust_analyzer.setup{
+require('lspconfig').rust_analyzer.setup{
   settings = {
     ['rust-analyzer'] = {
       diagnostics = {
