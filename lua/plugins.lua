@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
   use { "hrsh7th/cmp-cmdline", after = 'nvim-cmp' }       -- cmdline auto-completion
   use { 'L3MON4D3/LuaSnip' }
   use { 'saadparwaiz1/cmp_luasnip' }
+  use { 'b0o/schemastore.nvim'}
 
   -- Statusline / lua-line
   use { "nvim-lualine/lualine.nvim",
