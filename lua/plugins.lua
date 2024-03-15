@@ -119,6 +119,8 @@ return require('packer').startup(function(use)
       requires = { "nvim-tree/nvim-web-devicons" },
    }
 
+  use { "rottencandy/vimkubectl"}
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim
